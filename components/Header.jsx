@@ -25,7 +25,7 @@ export default function Header() {
           {/* لوگو با عکس جدید */}
           <Link href="/" className="flex items-center gap-2 shrink-0">
             <Image
-              src="/images/iconimage.png"
+              src="/images/iconimage.webp"
               alt="MineNews Logo"
               width={48}
               height={48}

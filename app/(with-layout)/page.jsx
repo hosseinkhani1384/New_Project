@@ -131,13 +131,6 @@ export default function HomePage() {
               آخرین اخبار دنیای ماینکرفت
             </div>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight">
-              <Image
-                src="/images/iconimage.png"
-                alt="MineNews"
-                width={64}
-                height={64}
-                className="inline-block w-14 h-14 mr-2 align-middle"
-              />
               <span className="text-gray-900 dark:text-white">Mine</span>
               <span className="text-green-600 dark:text-green-400 bg-linear-to-r from-green-500 to-emerald-400 bg-clip-text ">
                 News
