@@ -1,7 +1,6 @@
+import Image from "next/image";
 import "./globals.css";
-import { Providers } from "../store/providers";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import { Providers } from "@/store/providers";
 
 export default function RootLayout({ children }) {
   return (
@@ -9,11 +8,22 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/images/iconimage.png" type="image/png" />
       </head>
-      <body className="bg-white dark:bg-black">
+      <body
+        className="relative min-h-screen flex flex-col bg-white dark:bg-black"
+        suppressHydrationWarning
+      >
+        <div className="fixed inset-0 -z-10">
+          <Image
+            src="/images/background_image.png"
+            alt="Background"
+            fill
+            className="object-cover opacity-20 dark:opacity-30"
+            priority
+          />
+        </div>
+
         <Providers>
-          <Header />
-          {children}
-          <Footer/>
+          <main className="flex-1">{children}</main>
         </Providers>
       </body>
     </html>

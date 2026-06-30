@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Footer() {
   return (  
-    <footer className="mt-16 border-t border-gray-200 dark:border-gray-800 py-8 text-center text-sm text-gray-500 dark:text-gray-400">
+    <footer className="bg-white dark:bg-black mt-16 border-t border-gray-200 dark:border-gray-800 py-8 text-center text-sm text-gray-500 dark:text-gray-400">
       <div className="max-w-6xl mx-auto px-4">
         <p className="text-lg font-semibold text-gray-800 dark:text-white mb-1">
           ⛏️ Mine

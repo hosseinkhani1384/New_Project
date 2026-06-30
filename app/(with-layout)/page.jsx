@@ -118,21 +118,8 @@ export default function HomePage() {
   const dispatch = useDispatch();
 
   return (
-    <div className="min-h-screen bg-linear-to-b from-gray-50 via-white to-gray-100 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 transition-colors duration-500">
-      {/* 📌 بخش هیرو (Hero Section) */}
+    <div className="">
       <section className="relative overflow-hidden py-16 md:py-24">
-        {/* پس‌زمینه‌ی دکوری */}
-        <div className="absolute inset-0 opacity-[0.04] dark:opacity-[0.06]">
-          <div className="grid grid-cols-12 gap-1 p-4 max-w-7xl mx-auto">
-            {[...Array(72)].map((_, i) => (
-              <div
-                key={i}
-                className="aspect-square bg-green-600 rounded-sm"
-              ></div>
-            ))}
-          </div>
-        </div>
-
         <div className="relative max-w-7xl mx-auto px-4 text-center">
           <motion.div
             initial={{ y: -30, opacity: 0 }}
@@ -156,7 +143,7 @@ export default function HomePage() {
                 News
               </span>
             </h1>
-            <p className="mt-4 text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            <p className="mt-4 text-lg md:text-xl text-black-100 dark:text-gray-300 max-w-2xl mx-auto">
               مرجع تخصصی اخبار، آپدیت‌ها و رویدادهای بازی ماینکرفت
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">

@@ -53,7 +53,7 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-950 transition-colors duration-300 py-8 md:py-12">
+    <div className="transition-colors duration-300 py-8 md:py-12">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* هدر */}
         <motion.div
@@ -66,7 +66,7 @@ export default function AboutPage() {
             <Sparkles className="w-8 h-8 text-green-600 dark:text-green-400" />
             درباره MineNews
           </h1>
-          <p className="text-gray-600 dark:text-gray-400 mt-3 max-w-2xl mx-auto">
+          <p className="text-gray-800 dark:text-gray-300 mt-3 max-w-2xl mx-auto">
             مرجع تخصصی اخبار، آپدیت‌ها و رویدادهای بازی ماینکرفت
           </p>
         </motion.div>
